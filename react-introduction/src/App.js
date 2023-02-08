@@ -7,8 +7,13 @@ import Hello from './components/Hello';
 function App() {
   return (
     <div className="App">
-      <Greet />
-      <Welcome />
+      <Greet name= "Miles" >
+        This is a child component
+      </Greet>
+      <Greet name= "Clark" />
+      <Greet name= "Bruce" />
+      <Welcome name="Bruce" heroName="Batman" />
+      <Welcome name="Clark" heroName="Superman" />
       <Hello />
     </div>
   );
